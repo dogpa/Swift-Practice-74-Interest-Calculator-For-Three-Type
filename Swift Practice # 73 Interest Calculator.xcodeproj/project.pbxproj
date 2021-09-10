@@ -13,6 +13,9 @@
 		2DF6165B26EB153500BA4325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF6165926EB153500BA4325 /* Main.storyboard */; };
 		2DF6165D26EB153700BA4325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF6165C26EB153700BA4325 /* Assets.xcassets */; };
 		2DF6166026EB153700BA4325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF6165E26EB153700BA4325 /* LaunchScreen.storyboard */; };
+		2DF6166826EB1EC000BA4325 /* LumSumInvestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF6166726EB1EC000BA4325 /* LumSumInvestingViewController.swift */; };
+		2DF6166B26EB20C100BA4325 /* ResultForLSIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF6166A26EB20C100BA4325 /* ResultForLSIViewController.swift */; };
+		2DF6166E26EB219B00BA4325 /* StructToShowOnTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF6166D26EB219B00BA4325 /* StructToShowOnTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		2DF6165C26EB153700BA4325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DF6165F26EB153700BA4325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DF6166126EB153700BA4325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DF6166726EB1EC000BA4325 /* LumSumInvestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumSumInvestingViewController.swift; sourceTree = "<group>"; };
+		2DF6166A26EB20C100BA4325 /* ResultForLSIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultForLSIViewController.swift; sourceTree = "<group>"; };
+		2DF6166D26EB219B00BA4325 /* StructToShowOnTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructToShowOnTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,8 @@
 		2DF6164726EB153500BA4325 = {
 			isa = PBXGroup;
 			children = (
+				2DF6166C26EB215E00BA4325 /* 自定義Struct */,
+				2DF6166926EB1ED700BA4325 /* 單筆投入 */,
 				2DF6165226EB153500BA4325 /* Swift Practice # 73 Interest Calculator */,
 				2DF6165126EB153500BA4325 /* Products */,
 			);
@@ -65,6 +73,23 @@
 				2DF6166126EB153700BA4325 /* Info.plist */,
 			);
 			path = "Swift Practice # 73 Interest Calculator";
+			sourceTree = "<group>";
+		};
+		2DF6166926EB1ED700BA4325 /* 單筆投入 */ = {
+			isa = PBXGroup;
+			children = (
+				2DF6166726EB1EC000BA4325 /* LumSumInvestingViewController.swift */,
+				2DF6166A26EB20C100BA4325 /* ResultForLSIViewController.swift */,
+			);
+			path = "單筆投入";
+			sourceTree = "<group>";
+		};
+		2DF6166C26EB215E00BA4325 /* 自定義Struct */ = {
+			isa = PBXGroup;
+			children = (
+				2DF6166D26EB219B00BA4325 /* StructToShowOnTableView.swift */,
+			);
+			path = "自定義Struct";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +163,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF6165826EB153500BA4325 /* ViewController.swift in Sources */,
+				2DF6166B26EB20C100BA4325 /* ResultForLSIViewController.swift in Sources */,
 				2DF6165426EB153500BA4325 /* AppDelegate.swift in Sources */,
+				2DF6166E26EB219B00BA4325 /* StructToShowOnTableView.swift in Sources */,
 				2DF6165626EB153500BA4325 /* SceneDelegate.swift in Sources */,
+				2DF6166826EB1EC000BA4325 /* LumSumInvestingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
