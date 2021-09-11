@@ -34,7 +34,7 @@ class ResultForLSIViewController: UIViewController, UITableViewDelegate, UITable
         resultTableView.dataSource = self   //指派dataSource
         
         //執行自定義的 resultForLSI Function，並帶入指定的值進行計算。
-        resultForLSI(money: lumpSumNumber, rate: interestRateForLSV, years: yearsForLSV)
+        resultForLSI(money: lumpSumNumber!, rate: interestRateForLSV!, years: yearsForLSV!)
         
         //顯示上一頁的輸入的值
         investInfoFromLSIVCLabel.text = "您投入本金為 $\(lumpSumNumber!) 元\n您預設年利率為 \(interestRateForLSV!) %\n您預計投資\(yearsForLSV!) 年\n\n計算結果如下"
@@ -47,13 +47,15 @@ class ResultForLSIViewController: UIViewController, UITableViewDelegate, UITable
         var money: Float = money                    //跟隨計算結果改變的複利結果
         let rate: Float = rate                      //預計年利率
         let years: Float = years                    //預計投資年數
-        
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.maximumFractionDigits = 1
         for i in 1...Int(years) {
             
             money = money + (money * 1 / 100 * rate)    //複利計算
             
             //將計算結果轉型字串後加入到 resultArrayForEverYears中
-            resultArrayForEverYears.append(RateResultType(years: "投資第 \(i) 年", resultForEverYears: ["本利和為： $\(String(format: "%.2f", arguments: [money]))","累積利息： $\(String(format: "%.2f", arguments: [money - firstTimesMoneyForInvest]))"]))
+            resultArrayForEverYears.append(RateResultType(years: "投資第 \(i) 年", resultForEverYears: ["本利和為： $\(formatter.string(from: NSNumber(value: money))!)","累積利息： $\(formatter.string(from: NSNumber(value: (money - firstTimesMoneyForInvest)))!)"]))
             
         }
         

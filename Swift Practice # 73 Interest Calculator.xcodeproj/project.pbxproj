@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D3DCA9A26EC8084004F092A /* PeriodicInvestmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3DCA9926EC8084004F092A /* PeriodicInvestmentViewController.swift */; };
+		2D3DCA9C26EC809E004F092A /* ResultForPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3DCA9B26EC809E004F092A /* ResultForPIViewController.swift */; };
+		2D3DCA9F26ECA358004F092A /* LSIAddPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3DCA9E26ECA358004F092A /* LSIAddPIViewController.swift */; };
+		2D3DCAA126ECA36D004F092A /* ResultForLSIAddPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3DCAA026ECA36D004F092A /* ResultForLSIAddPIViewController.swift */; };
 		2DF6165426EB153500BA4325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF6165326EB153500BA4325 /* AppDelegate.swift */; };
 		2DF6165626EB153500BA4325 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF6165526EB153500BA4325 /* SceneDelegate.swift */; };
 		2DF6165826EB153500BA4325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF6165726EB153500BA4325 /* ViewController.swift */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D3DCA9926EC8084004F092A /* PeriodicInvestmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodicInvestmentViewController.swift; sourceTree = "<group>"; };
+		2D3DCA9B26EC809E004F092A /* ResultForPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultForPIViewController.swift; sourceTree = "<group>"; };
+		2D3DCA9E26ECA358004F092A /* LSIAddPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSIAddPIViewController.swift; sourceTree = "<group>"; };
+		2D3DCAA026ECA36D004F092A /* ResultForLSIAddPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultForLSIAddPIViewController.swift; sourceTree = "<group>"; };
 		2DF6165026EB153500BA4325 /* Swift Practice # 73 Interest Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Practice # 73 Interest Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DF6165326EB153500BA4325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DF6165526EB153500BA4325 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,11 +51,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D3DCA9826EC803B004F092A /* Periodic Investment */ = {
+			isa = PBXGroup;
+			children = (
+				2D3DCA9926EC8084004F092A /* PeriodicInvestmentViewController.swift */,
+				2D3DCA9B26EC809E004F092A /* ResultForPIViewController.swift */,
+			);
+			path = "Periodic Investment";
+			sourceTree = "<group>";
+		};
+		2D3DCA9D26ECA17D004F092A /* LumpSumInvest Add PeriodicInvest */ = {
+			isa = PBXGroup;
+			children = (
+				2D3DCA9E26ECA358004F092A /* LSIAddPIViewController.swift */,
+				2D3DCAA026ECA36D004F092A /* ResultForLSIAddPIViewController.swift */,
+			);
+			path = "LumpSumInvest Add PeriodicInvest";
+			sourceTree = "<group>";
+		};
 		2DF6164726EB153500BA4325 = {
 			isa = PBXGroup;
 			children = (
-				2DF6166C26EB215E00BA4325 /* 自定義Struct */,
-				2DF6166926EB1ED700BA4325 /* 單筆投入 */,
+				2DF6166C26EB215E00BA4325 /* Struct */,
+				2DF6166926EB1ED700BA4325 /* LunmSumInvestment */,
+				2D3DCA9826EC803B004F092A /* Periodic Investment */,
+				2D3DCA9D26ECA17D004F092A /* LumpSumInvest Add PeriodicInvest */,
 				2DF6165226EB153500BA4325 /* Swift Practice # 73 Interest Calculator */,
 				2DF6165126EB153500BA4325 /* Products */,
 			);
@@ -75,21 +103,21 @@
 			path = "Swift Practice # 73 Interest Calculator";
 			sourceTree = "<group>";
 		};
-		2DF6166926EB1ED700BA4325 /* 單筆投入 */ = {
+		2DF6166926EB1ED700BA4325 /* LunmSumInvestment */ = {
 			isa = PBXGroup;
 			children = (
 				2DF6166726EB1EC000BA4325 /* LumSumInvestingViewController.swift */,
 				2DF6166A26EB20C100BA4325 /* ResultForLSIViewController.swift */,
 			);
-			path = "單筆投入";
+			path = LunmSumInvestment;
 			sourceTree = "<group>";
 		};
-		2DF6166C26EB215E00BA4325 /* 自定義Struct */ = {
+		2DF6166C26EB215E00BA4325 /* Struct */ = {
 			isa = PBXGroup;
 			children = (
 				2DF6166D26EB219B00BA4325 /* StructToShowOnTableView.swift */,
 			);
-			path = "自定義Struct";
+			path = Struct;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,12 +190,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3DCA9C26EC809E004F092A /* ResultForPIViewController.swift in Sources */,
 				2DF6165826EB153500BA4325 /* ViewController.swift in Sources */,
 				2DF6166B26EB20C100BA4325 /* ResultForLSIViewController.swift in Sources */,
 				2DF6165426EB153500BA4325 /* AppDelegate.swift in Sources */,
 				2DF6166E26EB219B00BA4325 /* StructToShowOnTableView.swift in Sources */,
 				2DF6165626EB153500BA4325 /* SceneDelegate.swift in Sources */,
+				2D3DCA9F26ECA358004F092A /* LSIAddPIViewController.swift in Sources */,
 				2DF6166826EB1EC000BA4325 /* LumSumInvestingViewController.swift in Sources */,
+				2D3DCA9A26EC8084004F092A /* PeriodicInvestmentViewController.swift in Sources */,
+				2D3DCAA126ECA36D004F092A /* ResultForLSIAddPIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
